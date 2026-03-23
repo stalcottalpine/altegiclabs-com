@@ -234,9 +234,29 @@ function App() {
       <div className="section-rule"></div>
 
       {/* THE PROBLEM */}
-      <div className="section">
-        <div className="eyebrow">The problem</div>
-        <p>The prototypes exist. The use cases are real. What's missing is everything that turns a demo into a system — compliance architecture, deployment infrastructure, governance frameworks that let an organization actually trust what it's running. Legacy IT wasn't built for this velocity. Projects back up. Good ideas die in review. This is the gap we close.</p>
+      <div className="problem-section">
+        <div className="problem-left">
+          <div className="eyebrow">— the problem</div>
+          <h2 className="problem-headline">The deployment<br/>chasm is<br/>widening.</h2>
+        </div>
+        <div className="problem-grid">
+          <div className="problem-card">
+            <div className="problem-card-label">No deployment path</div>
+            <p className="problem-card-desc">The prototypes exist. The use cases are real. The gap is everything between where they are and where they need to be.</p>
+          </div>
+          <div className="problem-card">
+            <div className="problem-card-label">Compliance surface area</div>
+            <p className="problem-card-desc">Legacy IT wasn't built for this velocity — not the architecture, not the compliance requirements, not the governance surface area.</p>
+          </div>
+          <div className="problem-card">
+            <div className="problem-card-label">Projects backing up</div>
+            <p className="problem-card-desc">Good ideas are dying in review. The people who built them are starting to wonder why they bothered.</p>
+          </div>
+          <div className="problem-card">
+            <div className="problem-card-label">The gap we close</div>
+            <p className="problem-card-desc">Compliance architecture, deployment infrastructure, governance frameworks that organizations can actually trust running in production.</p>
+          </div>
+        </div>
       </div>
 
       {/* PULL QUOTE */}
@@ -249,7 +269,8 @@ function App() {
 
       {/* BUILD STACK DIAGRAM */}
       <div className="stack-section">
-        <div className="eyebrow">What production-grade actually means</div>
+        <div className="eyebrow">— what production-grade actually means</div>
+        <h2 className="section-display">Production-grade<br/>starts at the bottom.</h2>
         <div className="stack-header">
           <div>
             <p>Most teams build top-down. Application first, infrastructure when there's time. The result demos beautifully and deploys never. We build the other direction. The layers most teams skip are the ones that determine whether anything actually ships.</p>
@@ -387,48 +408,51 @@ function App() {
 
       {/* ENGAGEMENT PROCESS FLOW */}
       <div className="process-section">
-        <div className="eyebrow">How an engagement works</div>
-        <p style={{ fontSize: '1.08rem', color: 'var(--steel-dim)', maxWidth: '620px', marginBottom: 0, lineHeight: 1.8 }}>We start with what's already been built. Four phases, each with a defined outcome.</p>
+        <div className="eyebrow">— how an engagement works</div>
+        <h2 className="section-display">The Process.</h2>
+        <p style={{ fontSize: '1.08rem', color: 'var(--steel-dim)', maxWidth: '620px', marginBottom: 0, lineHeight: 1.8 }}>We don't start with a statement of work. We start with what's already been built — and work forward from there. Four phases, each with a defined outcome.</p>
 
-        <div className="process-flow">
-          <div className="process-step">
-            <div className="process-node">
-              <span className="process-node-num">01</span>
-              <div className="process-connector"></div>
+        <div className="process-list">
+          <div className="process-row">
+            <span className="process-row-num">01</span>
+            <div className="process-row-body">
+              <div className="process-row-title">Triage</div>
+              <p className="process-row-desc">Deployable or dead end. We find out fast.</p>
             </div>
-            <div className="process-title">Triage</div>
-            <p className="process-desc">We evaluate what's been built. Separate deployable from dead end. Name what's actually missing.</p>
+            <span className="process-row-arrow">→</span>
           </div>
-          <div className="process-step">
-            <div className="process-node">
-              <span className="process-node-num">02</span>
-              <div className="process-connector"></div>
+          <div className="process-row">
+            <span className="process-row-num">02</span>
+            <div className="process-row-body">
+              <div className="process-row-title">Foundation</div>
+              <p className="process-row-desc">Security. Compliance. Infrastructure. Built once, applied to everything.</p>
             </div>
-            <div className="process-title">Foundation</div>
-            <p className="process-desc">Security architecture. Compliance framework. Deployment infrastructure. Built once, applied across every project in the pipeline.</p>
+            <span className="process-row-arrow">→</span>
           </div>
-          <div className="process-step">
-            <div className="process-node">
-              <span className="process-node-num">03</span>
-              <div className="process-connector"></div>
+          <div className="process-row">
+            <span className="process-row-num">03</span>
+            <div className="process-row-body">
+              <div className="process-row-title">Build &amp; Extend</div>
+              <p className="process-row-desc">The prototypes worth keeping become production systems.</p>
             </div>
-            <div className="process-title">Build &amp; Extend</div>
-            <p className="process-desc">We take the prototypes worth keeping and build them to production. Behavioral calibration, audit trails, integration with what's already there.</p>
+            <span className="process-row-arrow">→</span>
           </div>
-          <div className="process-step">
-            <div className="process-node">
-              <span className="process-node-num">04</span>
+          <div className="process-row">
+            <span className="process-row-num">04</span>
+            <div className="process-row-body">
+              <div className="process-row-title">Deploy &amp; Transfer</div>
+              <p className="process-row-desc">We ship it, stabilize it, and leave a team that can run it.</p>
             </div>
-            <div className="process-title">Deploy &amp; Transfer</div>
-            <p className="process-desc">We deploy, stabilize, and hand off. Documentation, training, and a team that can run it without us in the room.</p>
+            <span className="process-row-arrow">→</span>
           </div>
         </div>
       </div>
 
       {/* THE WORK - TWO TRACKS */}
       <div className="section">
-        <div className="eyebrow">The work</div>
-        <p>One builds products. One unsticks organizations. The prototype was never the problem.</p>
+        <div className="eyebrow">— the work</div>
+        <h2 className="section-display">Two tracks.<br/>One conviction.</h2>
+        <p>Altegic Labs operates on two tracks. One builds products. One unsticks organizations. Both are grounded in the same conviction — that the prototype was never the problem.</p>
 
         <div className="tracks">
           <div className="track">
